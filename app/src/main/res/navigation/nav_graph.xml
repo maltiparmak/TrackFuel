@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/entryFragment">
+
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="com.technowalker.trackfuel.view.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry" >
+        <action
+            android:id="@+id/action_entryFragment_to_rideFragment"
+            app:destination="@id/rideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRideFragment"
+        android:name="com.technowalker.trackfuel.view.AddRideFragment"
+        android:label="fragment_add_ride"
+        tools:layout="@layout/fragment_add_ride" >
+        <action
+            android:id="@+id/action_addRideFragment_to_rideFragment"
+            app:destination="@id/rideFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rideFragment"
+        android:name="com.technowalker.trackfuel.view.RideFragment"
+        android:label="fragment_ride"
+        tools:layout="@layout/fragment_ride" >
+        <action
+            android:id="@+id/action_rideFragment_to_addRideFragment"
+            app:destination="@id/addRideFragment" />
+        <action
+            android:id="@+id/action_rideFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.technowalker.trackfuel.view.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_rideFragment"
+            app:destination="@id/rideFragment" />
+        <argument
+            android:name="currentRide"
+            app:argType="com.technowalker.trackfuel.model.Ride" />
+    </fragment>
+</navigation>

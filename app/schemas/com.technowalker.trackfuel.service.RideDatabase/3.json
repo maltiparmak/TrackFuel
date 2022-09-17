@@ -1,0 +1,70 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "4c8711f56ecef4e56e94eaf4146bc60b",
+    "entities": [
+      {
+        "tableName": "Ride",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`rideDistance` INTEGER, `rideLiter` INTEGER, `rideMoney` INTEGER, `uuid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `dateAdded` INTEGER NOT NULL, `rideDaySayi` INTEGER NOT NULL, `rideYearSayi` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "rideDistance",
+            "columnName": "rideDistance",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rideLiter",
+            "columnName": "rideLiter",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rideMoney",
+            "columnName": "rideMoney",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateAdded",
+            "columnName": "dateAdded",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rideDaySayi",
+            "columnName": "rideDaySayi",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rideYearSayi",
+            "columnName": "rideYearSayi",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uuid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4c8711f56ecef4e56e94eaf4146bc60b')"
+    ]
+  }
+}

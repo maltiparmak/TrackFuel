@@ -1,0 +1,82 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 5,
+    "identityHash": "4d145a6e303e0c1e5010822eec9b658c",
+    "entities": [
+      {
+        "tableName": "Ride",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`rideDistance` REAL, `rideLiter` REAL, `rideMoney` REAL, `uuid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `dateAdded` INTEGER NOT NULL, `rideDaySayi` INTEGER NOT NULL, `rideYearSayi` INTEGER NOT NULL, `rideDay` TEXT NOT NULL, `rideMonth` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "rideDistance",
+            "columnName": "rideDistance",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rideLiter",
+            "columnName": "rideLiter",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rideMoney",
+            "columnName": "rideMoney",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateAdded",
+            "columnName": "dateAdded",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rideDaySayi",
+            "columnName": "rideDaySayi",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rideYearSayi",
+            "columnName": "rideYearSayi",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rideDay",
+            "columnName": "rideDay",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rideMonth",
+            "columnName": "rideMonth",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uuid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4d145a6e303e0c1e5010822eec9b658c')"
+    ]
+  }
+}

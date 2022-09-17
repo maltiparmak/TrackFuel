@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: C">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/jars/libs/unity-scaradapter-1920.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/jars/libs/unity-scaradapter-1950.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/jars/libs/unity-scaradapter-2000.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/jars/libs/unity-scaradapter-common.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b0edd541093818532aaf0aa3b3c1cbbf/transformed/unityads/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
